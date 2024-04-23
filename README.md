@@ -1,11 +1,24 @@
 # Source Scramble Patches
 
-This repo is (or will be) a collection of [Source Scramble](https://github.com/nosoop/SMExt-SourceScramble) patches,
+This repo is a collection of [Source Scramble](https://github.com/nosoop/SMExt-SourceScramble) patches,
 intended to replace single-purpose plugins that rarely get updated.
 
 In order to use these, you **need** the `sourcescramble_manager` plugin, which is included in Source Scramble releases.
 
-## Contents
+## Usage
 
-* tf2.movement_speed_unlocker.txt
-    * Replacement of TF2 Movement Speed unlocker
+Get the `addons/configs/sourcescramble_manager.cfg` from the repository and comment out the patches you'd like to use.
+
+For example, if you want to unlock the maximum movement speed, you'd uncomment the following line:
+
+```diff
+"tf2.movement_speed_unlocker"		"CTFGameMovement::ProcessMovement::UnlimitedMovementSpeed"
+```
+
+Make sure you also install the gamedata file associated with it into `addons/sourcemod/gamedata`, in this
+case `tf2.movement_speed_unlocker.txt`.
+
+## What's In The Box?
+
+* `tf2.movement_speed_unlocker.txt`
+    * Replacement of [TF2 Move Speed unlocker](https://forums.alliedmods.net/showthread.php?p=2659562)
