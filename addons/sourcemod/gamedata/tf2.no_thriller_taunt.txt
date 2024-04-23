@@ -1,0 +1,34 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"CTFPlayer::ModifyOrAppendCriteria"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer22ModifyOrAppendCriteriaER14AI_CriteriaSet"
+				"windows"	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\x18\x01\x00\x00\x56\x57\x8B\x7B\x08"
+			}
+		}
+		"MemPatches"
+		{
+			"CTFPlayer::ModifyOrAppendCriteria::NoThrillerTaunt"
+			{
+				"signature" "CTFPlayer::ModifyOrAppendCriteria"
+				"linux"
+				{
+					"offset"	"151Bh"
+					"verify"	"\x77\x23" // ja
+					"patch"		"\x90\x90" // nop
+				}
+				"windows"
+				{
+					"offset"	"B77h"
+					"verify"	"\x76\x17" // jbe
+					"patch"		"\xEB\x17" // jmp
+				}
+			}
+		}
+	}
+}

@@ -13,8 +13,7 @@
 		}
 		"MemPatches"
 		{
-			// Movement speed unlocker
-			// Sets mv->m_flMaxSpeed to FLT_MAX instead of 520
+			// Sets mv->m_flMaxSpeed to FLT_MAX
 			"CTFGameMovement::ProcessMovement::UnlimitedMovementSpeed"
 			{
 				"signature" "CTFGameMovement::ProcessMovement"
