@@ -7,14 +7,14 @@ In order to use these, you **need** the `sourcescramble_manager` plugin, which i
 
 ## Usage
 
-For each patch that you would like to enable, download its relevant `cfg` file from `addons/configs/sourcescramble/`
-and place it into your server's `addons/configs/sourcescramble/` directory (make this directory if it does not exist).
-Download the corresponding gamedata file for each patch from `addons/gamedata/` and place it in your server's
-`addons/gamedata/` directory.
-To disable a patch, delete the relevant `cfg` file.
+For each patch that you would like to enable, download its relevant `cfg` file  from `addons/sourcemod/configs/sourcescramble/` and place it into your server's `addons/sourcemod/configs/sourcescramble/` directory (create this directory if it does  not exist).
 
-For example, if you want to unlock the maximum movement speed, you'd download 
-`addons/configs/sourcescramble/tf2_movement_speed_unlocker.cfg` and `addons/gamedata/tf2.movement_speed_unlocker.txt`.
+Download the corresponding gamedata file for each patch from `addons/sourcemod/gamedata/` and place it in your server's
+`addons/sourcemod/gamedata/` directory.
+
+For example, if you want to unlock the maximum movement speed, you'd download `addons/sourcemod/configs/sourcescramble/tf2_movement_speed_unlocker.cfg` and `addons/sourcemod/gamedata/tf2.movement_speed_unlocker.txt`.
+
+To disable a patch, delete the relevant `cfg` file.
 
 ## What's In The Box?
 
