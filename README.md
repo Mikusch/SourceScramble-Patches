@@ -1,13 +1,13 @@
 # Source Scramble Patches
 
-This repo is a collection of [Source Scramble](https://github.com/nosoop/SMExt-SourceScramble) patches,
+This repository is a collection of [Source Scramble](https://github.com/nosoop/SMExt-SourceScramble) patches,
 intended to replace single-purpose plugins that rarely get updated and are likely to break.
 
 In order to use these, you **need** the `sourcescramble_manager` plugin, which is included in Source Scramble releases.
 
 ## Usage
 
-Get the `addons/configs/sourcescramble_manager.cfg` from the repository and comment out the patches you'd like to use.
+Get the `addons/configs/sourcescramble_manager.cfg` from this repository and comment out the patches you'd like to use.
 
 For example, if you want to unlock the maximum movement speed, you'd uncomment the following line:
 
