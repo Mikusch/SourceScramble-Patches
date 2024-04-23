@@ -7,22 +7,18 @@ In order to use these, you **need** the `sourcescramble_manager` plugin, which i
 
 ## Usage
 
-Get the `addons/configs/sourcescramble_manager.cfg` from this repository and comment out the patches you'd like to use.
+For each patch that you would like to enable, download its relevant `cfg` file from `addons/configs/sourcescramble/`
+and place it into your server's `addons/configs/sourcescramble/` directory (make this directory if it does not exist).
+Download the corresponding gamedata file for each patch from `addons/gamedata/` and place it in your server's
+`addons/gamedata/` directory.
+To disable a patch, delete the relevant `cfg` file.
 
-For example, if you want to unlock the maximum movement speed, you'd uncomment the following line:
-
-```diff
-"tf2.movement_speed_unlocker"		"CTFGameMovement::ProcessMovement::UnlimitedMovementSpeed"
-```
-
-Uncomment every patch associated with the same gamedata file, or you'll be missing out on functionality.
-
-Make sure you also install the gamedata file associated with it into `addons/sourcemod/gamedata`, in this
-case `tf2.movement_speed_unlocker.txt`.
+For example, if you want to unlock the maximum movement speed, you'd download 
+`addons/configs/sourcescramble/tf2_movement_speed_unlocker.cfg` and `addons/gamedata/tf2.movement_speed_unlocker.txt`.
 
 ## What's In The Box?
 
-* `tf2.movement_speed_unlocker.txt`
+* `tf2_movement_speed_unlocker.cfg` and `tf2.movement_speed_unlocker.txt`
     * Replaces [TF2 Move Speed unlocker](https://forums.alliedmods.net/showthread.php?p=2659562)
-* `tf2.no_thriller_taunt.txt`
+* `tf2_no_thriller_taunt.cfg` and `tf2.no_thriller_taunt.txt`
     * Replaces [No Thriller Taunt](https://forums.alliedmods.net/showthread.php?t=171343)
