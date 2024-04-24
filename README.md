@@ -10,7 +10,7 @@ For each patch that you would like to enable, download its relevant `cfg` file  
 
 Download the corresponding gamedata file for each patch from `addons/sourcemod/gamedata/` and place it in your server's `addons/sourcemod/gamedata/` directory.
 
-For example, if you want to unlock the maximum movement speed, you'd download `addons/sourcemod/configs/sourcescramble/tf2_movement_speed_unlocker.cfg` and `addons/sourcemod/gamedata/tf2.movement_speed_unlocker.txt`.
+For example, if you want to unlock the maximum movement speed, you'd download `addons/sourcemod/configs/sourcescramble/tf2.movement_speed_unlocker.cfg` and `addons/sourcemod/gamedata/tf2.movement_speed_unlocker.txt`.
 
 To disable a patch, delete the relevant `cfg` file.
 
