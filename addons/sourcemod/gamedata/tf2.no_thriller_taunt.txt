@@ -15,7 +15,7 @@
 		{
 			"CTFPlayer::ModifyOrAppendCriteria::NoThrillerTaunt"
 			{
-				"signature" "CTFPlayer::ModifyOrAppendCriteria"
+				"signature"	"CTFPlayer::ModifyOrAppendCriteria"
 				"linux"
 				{
 					"offset"	"151Bh"

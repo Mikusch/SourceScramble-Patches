@@ -16,7 +16,7 @@
 			// Sets mv->m_flMaxSpeed to FLT_MAX
 			"CTFGameMovement::ProcessMovement::UnlimitedMovementSpeed"
 			{
-				"signature" "CTFGameMovement::ProcessMovement"
+				"signature"	"CTFGameMovement::ProcessMovement"
 				"linux"
 				{
 					"offset"	"61h"
