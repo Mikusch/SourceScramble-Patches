@@ -1,0 +1,35 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"ED_Alloc"
+			{
+				"library"	"engine"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x10\x56\x8B\x75\x08\x57\x85\xF6"
+				"linux"		"@_Z8ED_Alloci"
+			}
+		}
+		"MemPatches"
+		{
+			"ED_Alloc::IgnoreFreeTime"
+			{
+				"signature"	"ED_Alloc"
+				"linux"
+				{
+					"offset"	"1D6h"
+					"verify"	"\x77\x78"
+					"patch"		"\x90\x90\x90\x90\x90\x90"
+				}
+				"windows"
+				{
+					"offset"	"1D2h"
+					"verify"	"\x77\x25" // ja
+					"patch"		"\xEB\x25" // jmp
+					"preserve"	"\x00\xFF"
+				}
+			}
+		}
+	}
+}

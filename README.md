@@ -22,3 +22,5 @@ To disable a patch, delete the relevant `cfg` file.
     * Replaces [No Thriller Taunt](https://forums.alliedmods.net/showthread.php?t=171343)
 * `tf2.mvm_increased_bot_limit.cfg` and `tf2.mvm_increased_bot_limit.txt`
   * Replaces [Unlimited MvM Bots](https://forums.alliedmods.net/showthread.php?t=343531)
+* `tf2.ed_alloc_fix.cfg` and `tf2.ed_alloc_fix.txt`
+  * Fixes a bug with edicts in TF2
