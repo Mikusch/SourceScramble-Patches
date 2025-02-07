@@ -19,8 +19,8 @@
 				"linux"
 				{
 					"offset"	"1D6h"
-					"verify"	"\x77\x78"
-					"patch"		"\x90\x90\x90\x90\x90\x90"
+					"verify"	"\x77\x78" // ja
+					"patch"		"\xEB\x78" // jmp
 				}
 				"windows"
 				{
