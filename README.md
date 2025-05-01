@@ -21,9 +21,6 @@ To disable a patch, delete the relevant `cfg` file.
     * Replaces [TF2 Move Speed Unlocker](https://forums.alliedmods.net/showthread.php?p=2659562)
 * `tf2.no_thriller_taunt.cfg` and `tf2.no_thriller_taunt.txt`
     * Replaces [No Thriller Taunt](https://forums.alliedmods.net/showthread.php?t=171343)
-* `tf2.mvm_increased_bot_limit.cfg` and `tf2.mvm_increased_bot_limit.txt`
-    * Raises the MvM bot limit to 99
-    * Replaces [Unlimited MvM Bots](https://forums.alliedmods.net/showthread.php?t=343531)
 * `tf2.ed_alloc_fix.cfg` and `tf2.ed_alloc_fix.txt`
     * When an edict is freed, it can not be used for 1 second.
       This can cause server crashes if the edict count increases very quickly (e.g. by a round restart).
