@@ -9,6 +9,7 @@
 				"library"	"engine"
 				"windows"	"\x55\x8B\xEC\x83\xEC\x10\x56\x8B\x75\x08\x57\x85\xF6"
 				"linux"		"@_Z8ED_Alloci"
+				"linux64"	"@_Z8ED_Alloci"
 			}
 		}
 		"MemPatches"
@@ -21,6 +22,12 @@
 					"offset"	"1D6h"
 					"verify"	"\x77\x78" // ja
 					"patch"		"\xEB\x78" // jmp
+				}
+				"linux64"
+				{
+					"offset" 	"232h"
+					"verify"	"\x0F\x87" // ja
+					"patch"		"\x90\xE9" // jmp
 				}
 				"windows"
 				{
