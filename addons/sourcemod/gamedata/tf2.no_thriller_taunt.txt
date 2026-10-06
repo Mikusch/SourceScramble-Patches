@@ -18,7 +18,7 @@
 				"signature"	"CTFPlayer::ModifyOrAppendCriteria"
 				"linux"
 				{
-					"offset"	"151Bh"
+					"offset"	"1559h"
 					"verify"	"\x77\x23" // ja
 					"patch"		"\x90\x90" // nop
 				}
