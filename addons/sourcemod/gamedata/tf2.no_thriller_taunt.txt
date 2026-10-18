@@ -10,6 +10,7 @@
 				"linux"		"@_ZN9CTFPlayer22ModifyOrAppendCriteriaER14AI_CriteriaSet"
 				"linux64"	"@_ZN9CTFPlayer22ModifyOrAppendCriteriaER14AI_CriteriaSet"
 				"windows"	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\x28\x01\x00\x00\x56\x57\x8B\x7B\x08"
+				"windows64"	"\x48\x8B\xC4\x48\x89\x58\x10\x55\x56\x57\x41\x54"
 			}
 		}
 		"MemPatches"
@@ -34,6 +35,12 @@
 					"offset"	"B77h"
 					"verify"	"\x76\x17" // jbe
 					"patch"		"\xEB\x17" // jmp
+				}
+				"windows64"
+				{
+					"offset"	"B76h"
+					"verify"	"\x73\x1A" // jae
+					"patch"		"\xEB\x1A" // jmp
 				}
 			}
 		}
