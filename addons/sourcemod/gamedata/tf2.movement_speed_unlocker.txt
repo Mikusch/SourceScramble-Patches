@@ -8,6 +8,7 @@
 			{
 				"library"	"server"
 				"linux"		"@_ZN15CTFGameMovement15ProcessMovementEP11CBasePlayerP9CMoveData"
+				"linux64"	"@_ZN15CTFGameMovement15ProcessMovementEP11CBasePlayerP9CMoveData"
 				"windows"	"\x55\x8B\xEC\x56\x57\x8B\x7D\x08\x8B\xF1\x85\xFF\x0F\x84\x2A\x2A\x2A\x2A\x83\x7D\x0C\x00"
 			}
 		}
@@ -22,6 +23,12 @@
 					"offset"	"61h"
 					"verify"	"\xC7\x47\x3C\x00\x00\x02\x44"
 					"patch"		"\xC7\x47\x3C\xFF\xFF\x7F\x7F"
+				}
+				"linux64"
+				{
+					"offset"	"6Bh"
+					"verify"	"\x41\xC7\x45\x3C\x00\x00\x02\x44"
+					"patch"		"\x41\xC7\x45\x3C\xFF\xFF\x7F\x7F"
 				}
 				"windows"
 				{

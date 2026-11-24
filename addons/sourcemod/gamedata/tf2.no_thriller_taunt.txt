@@ -26,9 +26,9 @@
 				}
 				"linux64"
 				{
-					"offset"	"1692h"
-					"verify"	"\x77\x1E" // ja
-					"patch"		"\x90\x90" // nop
+					"offset"	"E2Fh"
+					"verify"	"\x0F\x86" // jbe
+					"patch"		"\x90\xE9" // jmp
 				}
 				"windows"
 				{
