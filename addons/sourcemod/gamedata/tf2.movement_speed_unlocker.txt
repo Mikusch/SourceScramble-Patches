@@ -20,9 +20,9 @@
 				"signature"	"CTFGameMovement::ProcessMovement"
 				"linux"
 				{
-					"offset"	"61h"
-					"verify"	"\xC7\x47\x3C\x00\x00\x02\x44"
-					"patch"		"\xC7\x47\x3C\xFF\xFF\x7F\x7F"
+					"offset"	"70h"
+					"verify"	"\xC7\x40\x3C\x00\x00\x02\x44"
+					"patch"		"\xC7\x40\x3C\xFF\xFF\x7F\x7F"
 				}
 				"linux64"
 				{

@@ -19,9 +19,9 @@
 				"signature"	"ED_Alloc"
 				"linux"
 				{
-					"offset"	"1D6h"
-					"verify"	"\x77\x78" // ja
-					"patch"		"\xEB\x78" // jmp
+					"offset"	"218h"
+					"verify"	"\x76\x56" // jbe
+					"patch"		"\x90\x90" // nop
 				}
 				"linux64"
 				{
