@@ -1,0 +1,28 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"CHLTVDirector::BuildCameraList"
+			{
+				"library"	"server"
+				"linux64"	"@_ZN13CHLTVDirector15BuildCameraListEv"
+			}
+		}
+		"MemPatches"
+		{
+			// Returns immediately, so the director never stores pointers to info_observer_point entities
+			"CHLTVDirector::BuildCameraList::NoFixedCameras"
+			{
+				"signature"	"CHLTVDirector::BuildCameraList"
+				"linux64"
+				{
+					"offset"	"0h"
+					"verify"	"\x55" // push rbp
+					"patch"		"\xC3" // ret
+				}
+			}
+		}
+	}
+}

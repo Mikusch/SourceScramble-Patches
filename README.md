@@ -19,6 +19,10 @@ To disable a patch, delete the relevant `cfg` file.
 * [`tf2.movement_speed_unlocker.cfg`](/addons/sourcemod/configs/sourcescramble/tf2.movement_speed_unlocker.cfg) and [`tf2.movement_speed_unlocker.txt`](/addons/sourcemod/gamedata/tf2.movement_speed_unlocker.txt) **[TF2 only]**
     * Allows unlimited movement speed.
     * Replaces [TF2 Move Speed Unlocker](https://forums.alliedmods.net/showthread.php?p=2659562).
+* [`tf2.no_sourcetv_fixed_cameras.cfg`](/addons/sourcemod/configs/sourcescramble/tf2.no_sourcetv_fixed_cameras.cfg) and [`tf2.no_sourcetv_fixed_cameras.txt`](/addons/sourcemod/gamedata/tf2.no_sourcetv_fixed_cameras.txt) **[TF2 only]**
+    * The SourceTV director keeps a list of every `info_observer_point` to use as fixed cameras, and only rebuilds it on map load and round restart.
+    * If an `info_observer_point` is removed in between (e.g. by a plugin or VScript), the list still points at it and the server crashes when the director uses it.
+    * This patch stops the director from building the list, so SourceTV no longer cuts to fixed cameras.
 * [`tf2.no_thriller_taunt.cfg`](/addons/sourcemod/configs/sourcescramble/tf2.no_thriller_taunt.cfg) and [`tf2.no_thriller_taunt.txt`](/addons/sourcemod/gamedata/tf2.no_thriller_taunt.txt) **[TF2 only]**
     * Replaces [No Thriller Taunt](https://forums.alliedmods.net/showthread.php?t=171343).
 * [`ed_alloc_fix.cfg`](/addons/sourcemod/configs/sourcescramble/ed_alloc_fix.cfg) and [`ed_alloc_fix.txt`](/addons/sourcemod/gamedata/ed_alloc_fix.txt)
